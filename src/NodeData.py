@@ -7,5 +7,8 @@ class NodeData:
         self.location = pos
 
     def __str__(self):
-        return f'key:{self.key}'
+        return f'{self.key}'
+
+    def __repr__(self):
+        return self.__str__()
 

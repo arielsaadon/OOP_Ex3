@@ -5,4 +5,7 @@ class EdgeData:
         self.weight = weight
 
     def __str__(self):
-        return f'{self.dest}'
+        return f'{self.src}{"-->"}{self.dest}'
+
+    def __repr__(self):
+        return self.__str__()
