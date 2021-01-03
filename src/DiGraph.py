@@ -34,22 +34,23 @@ class DiGraph(GraphInterface):
             return self.__neighbors_out[id1]
 
     def add_edge(self, id1: int, id2: int, weight: float) -> bool:
-        if self.__vertices.get(id1) is not None:
-            if self.__neighbors_out.get(id1) is not None:
-                for edge in self.__neighbors_out.get(id1):
-                    if edge.src is id1 and edge.dest is id2:
-                        self.remove_edge(id1, id2)
-                        self.__neighbors_out.setdefault(id1, []).append(EdgeData(id1, id2, weight))
-                        self.__neighbors_in.setdefault(id2, []).append(EdgeData(id1, id2, weight))
-                        self.__edges_size += 1
-                        self.__mc += 1
-                        return True
+        if id1 is not id2:
+            if self.__vertices.get(id1) is not None and self.__vertices.get(id2) is not None:
+                if self.__neighbors_out.get(id1) is not None:
+                    for edge in self.__neighbors_out.get(id1):
+                        if edge.src is id1 and edge.dest is id2:
+                            self.remove_edge(id1, id2)
+                            self.__neighbors_out.setdefault(id1, []).append(EdgeData(id1, id2, weight))
+                            self.__neighbors_in.setdefault(id2, []).append(EdgeData(id1, id2, weight))
+                            self.__edges_size += 1
+                            self.__mc += 1
+                            return True
 
-            self.__neighbors_out.setdefault(id1, []).append(EdgeData(id1, id2, weight))
-            self.__neighbors_in.setdefault(id2, []).append(EdgeData(id1, id2, weight))
-            self.__edges_size += 1
-            self.__mc += 1
-            return True
+                self.__neighbors_out.setdefault(id1, []).append(EdgeData(id1, id2, weight))
+                self.__neighbors_in.setdefault(id2, []).append(EdgeData(id1, id2, weight))
+                self.__edges_size += 1
+                self.__mc += 1
+                return True
 
         return False
 
@@ -64,13 +65,20 @@ class DiGraph(GraphInterface):
 
     def remove_node(self, node_id: int) -> bool:
         if self.__vertices.get(node_id) is not None:
-            out_edges = self.all_out_edges_of_node(node_id)
-            for edge in out_edges:
-                self.remove_edge(edge.src, edge.dest)
+            if self.all_out_edges_of_node(node_id) is not None:
+                out_edges = self.all_out_edges_of_node(node_id)[:]
+                for edge in out_edges:
+                    self.remove_edge(edge.src, edge.dest)
 
-            in_edges = self.all_in_edges_of_node(node_id)
-            for edge in in_edges:
-                self.remove_edge(edge.src, edge.dest)
+                if self.all_in_edges_of_node(node_id) is not None:
+                    in_edges = self.all_in_edges_of_node(node_id)[:]
+                    for edge in in_edges:
+                        self.remove_edge(edge.src, edge.dest)
+
+                del self.__vertices[node_id]
+                self.__node_size -= 1
+                self.__mc += 1
+                return True
 
             del self.__vertices[node_id]
             self.__node_size -= 1
@@ -80,14 +88,18 @@ class DiGraph(GraphInterface):
         return False
 
     def remove_edge(self, node_id1: int, node_id2: int) -> bool:
-        if self.__vertices[node_id1] is not None:
+        if self.__vertices.get(node_id1) is not None and self.__vertices.get(node_id2) is not None:
             if self.__neighbors_out.get(node_id1) is not None:
                 for edge in self.__neighbors_out.get(node_id1):
                     if edge.src is node_id1 and edge.dest is node_id2:
                         self.__neighbors_out[node_id1].remove(edge)
+                        if len(self.__neighbors_out.get(node_id1)) == 0:
+                            del self.__neighbors_out[node_id1]
                 for edge in self.__neighbors_in.get(node_id2):
                     if edge.src is node_id1 and edge.dest is node_id2:
                         self.__neighbors_in[node_id2].remove(edge)
+                        if len(self.__neighbors_in.get(node_id2)) == 0:
+                            del self.__neighbors_in[node_id2]
                         self.__edges_size -= 1
                         self.__mc += 1
                         return True
@@ -100,7 +112,7 @@ class DiGraph(GraphInterface):
             s += f'{key}{"-->"}'
             if self.__neighbors_out.get(key) is not None:
                 for neighbor in self.__neighbors_out.get(key):
-                    s += f'{neighbor.dest}{[neighbor.weight] } '
+                    s += f'{neighbor.dest}{[neighbor.weight]} '
             s += '\n'
         return s
 

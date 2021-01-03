@@ -7,8 +7,8 @@ from GraphInterface import GraphInterface
 
 class GraphAlgo(GraphAlgoInterface):
 
-    def __init__(self):
-        self.graph = DiGraph()
+    def __init__(self, di_graph: DiGraph):
+        self.graph = di_graph
 
     def get_graph(self) -> GraphInterface:
         return self.graph
