@@ -33,6 +33,9 @@ class DiGraphTest(unittest.TestCase):
         self.assertEqual(self.graph.e_size(), 2, 'add one and after remove one')
 
     def test_get_all_v(self):
+        empty_graph = DiGraph()
+        self.assertEqual(empty_graph.get_all_v(), {}, "dont have vertex in graph")
+
         dict_vertices = self.graph.get_all_v()
         for n in dict_vertices:
             self.assertEqual(dict_vertices[n].key, n)
@@ -43,14 +46,20 @@ class DiGraphTest(unittest.TestCase):
             self.assertIsNotNone(dict_vertices[n])
 
     def test_all_in_edges_of_node(self):
+        empty_graph = DiGraph()
+        self.assertEqual(empty_graph.get_all_v(), {}, "dont have vertex in graph")
+
         self.graph.add_edge(0, 2, 13)
         self.assertIsNotNone(self.graph.all_in_edges_of_node(2), 'add one edge')
         self.graph.remove_edge(0, 2)
-        self.assertIsNone(self.graph.all_in_edges_of_node(2), 'after remove edge')
+        self.assertEqual(self.graph.all_in_edges_of_node(2), {}, 'after remove edge')
 
-        self.assertIsNone(self.graph.all_in_edges_of_node(6), 'node is not in graph')
+        self.assertEqual(self.graph.all_in_edges_of_node(6), {}, 'node is not in graph')
 
     def test_all_out_edges_of_node(self):
+        empty_graph = DiGraph()
+        self.assertEqual(empty_graph.get_all_v(), {}, "dont have vertex in graph")
+
         self.graph.add_edge(2, 5, 13)
         self.graph.add_edge(2, 3, 1.3)
         self.graph.add_edge(4, 2, 1)
@@ -61,16 +70,16 @@ class DiGraphTest(unittest.TestCase):
         self.assertIsNotNone(self.graph.all_out_edges_of_node(4))
         self.graph.remove_edge(2, 3)
         self.graph.remove_edge(4, 2)
-        self.assertIsNone(self.graph.all_in_edges_of_node(2), 'after remove all edges')
-        self.assertIsNone(self.graph.all_in_edges_of_node(4), 'after remove all edges')
+        self.assertEqual(self.graph.all_in_edges_of_node(2), {}, 'after remove all edges')
+        self.assertEqual(self.graph.all_in_edges_of_node(4), {}, 'after remove all edges')
 
-        self.assertIsNone(self.graph.all_out_edges_of_node(-1), 'node is not in graph')
+        self.assertEqual(self.graph.all_out_edges_of_node(-1), {}, 'node is not in graph')
 
     def test_add_edge(self):
         self.assertFalse(self.graph.add_edge(7, 3, 11), 'node is not in graph')
         self.assertFalse(self.graph.add_edge(3, 7, 11), 'node is not in graph')
         self.assertTrue(self.graph.add_edge(3, 2, 11), 'add edge 3,2')
-        self.assertTrue(self.graph.add_edge(3, 2, 12), 'change weight')
+        self.assertFalse(self.graph.add_edge(3, 2, 12), 'change weight')
         self.assertFalse(self.graph.add_edge(2, 2, 12), 'impossible to create a edge from vertex to himself')
 
     def test_add_node(self):
@@ -79,7 +88,7 @@ class DiGraphTest(unittest.TestCase):
         self.assertFalse(graph.add_node(5), 'node is exists')
         dict_vertices = graph.get_all_v()
         for n in dict_vertices:
-            self.assertEqual(dict_vertices[n].key, 5)
+            self.assertEqual(n, 5)
 
     def test_remove_node(self):
         self.assertEqual(self.graph.v_size(), 6)
