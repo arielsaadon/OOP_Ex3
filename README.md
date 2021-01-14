@@ -14,27 +14,26 @@ In each Node has the following:<br>
    <table>
      <thead>
        <tr>
-       <th>Fields</th>
+          <th>Fields</th>
               <th>Type</th>
      </tr>
     <thead>
       <tr>
        <tbody>
           <tr>
-             <td rowspan=4><tbody>
                <td>key</td>
+               <td>int</td>
       </tr> 
       <tr>
             <td>weight</td>
+            <td>floot</td>
       </tr> 
       <tr>
             <td>tag</td>
             <td>pos</td>
-      </tbody></td>
              <td>int</td>
       </tr> 
-      <tr>
-            <td>floot</td>
+      <tr>   
       </tr> 
       <tr>
             <td>boolean</td>
