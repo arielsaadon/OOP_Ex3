@@ -1,7 +1,7 @@
 # Directed weighted graph
 > - Authers [Yakov Elkobi](https://github.com/yakovElkobi) && [Ariel Saadon](https://github.com/arielsaadon)
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhackernoon.com%2Fthe-javascript-developers-guide-to-graphs-and-detecting-cycles-in-them-96f4f619d563&psig=AOvVaw3ViJSAGetG2qGSCgal33mL&ust=1610729657948000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDO3fvxm-4CFQAAAAAdAAAAABA)
+![](https://hackernoon.com/hn-images/1*qq0sgd0Kny9QTaD-UT8LbQ.png)
 
 The project is about Directed weighted graph.<br>
 This project hes been done for assignment in course OOP in Ariel university.<br>
