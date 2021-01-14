@@ -11,11 +11,10 @@ In each Node has the following:<br>
 
 
 
-    <table>
+   <table>
      <thead>
        <tr>
-      
-              <th>Fields</th>
+       <th>Fields</th>
               <th>Type</th>
      </tr>
     <thead>
@@ -34,10 +33,7 @@ In each Node has the following:<br>
       <tr>
        </tr>
        </tbody>
-              
-      
-              
-      </tr>
+        </tr>
     <tbody>
       <tr>
              <td>int</td>
