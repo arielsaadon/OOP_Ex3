@@ -30,7 +30,7 @@ In each Node has the following:<br>
             <td>tag</td>
       </tr> 
       <tr>
-        <td>pos</td>
+        </td>pos</td>
       </tr> 
       <tr>
        </tr>
