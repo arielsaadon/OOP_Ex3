@@ -88,6 +88,9 @@ The following methods:<br>
 Finds the Strongly Connected Component(SCC) that node id1 is a part of.<br>
 In this method we use BFS algorithm.<br>
 Return The list of nodes in the SCC.<br>
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
+
 * BFS algorithm:<br>
 https://en.wikipedia.org/wiki/Breadth-first_search
 * connected_components:<br>
