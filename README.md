@@ -9,15 +9,14 @@ It has the following class.<br>
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
 
-|-------|-------|
 |Fields |  Type |
-|-------|-------|
+|               |
 |  key  |  int  |
-|-------|-------|
+|               |
 |weight | floot |
-|-------|-------|
+|               |
 |  tag  |boolean|
-|-------|-------|
+|               |
 |  pos  | tuple |
 |-------|-------|
 
