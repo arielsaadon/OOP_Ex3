@@ -37,15 +37,11 @@ In each Node has the following:<br>
 # Class DiGraph:
 This class repesnt graph.<br>
 In this class you can do the following:<br>
-add/remove Node in the graph.<br>
-add/remove edge in the graph.<br>
+add/remove Node in the graph, add/remove edge in the graph.<br>
 Also you can get the following:<br>
 All Nodes, edges out/in, node size, edge size, mc.<br>
-The Node are stored in a Dict.<br>
-The edgs and weight are stored in a double Dict.<br>
-one for out edge and one for in edge.<br>
-edge_size counts edges in the graph.<br>
-mc counts actions in the graph.<br>
+The Node are stored in a Dict, The edgs and weight are stored in a double Dict one for out edge and one for in edge.<br>
+edge_size counts edges in the graph, mc counts actions in the graph.<br>
 
 <table>
      <thead>
@@ -88,7 +84,7 @@ Return The list of nodes in the SCC.<br>
 
 ![](https://en.wikipedia.org/wiki/Breadth-first_search#/media/File:Animated_BFS.gif)
 
-#BFS algorithm:<br>
+* BFS algorithm:<br>
 https://en.wikipedia.org/wiki/Breadth-first_search
 * connected_components:<br>
 Finds all the Strongly Connected Component(SCC) in the graph.<br>
@@ -97,7 +93,7 @@ The list all SCC.<br>
 * shortest_path:<br>
 Returns the shortest path from node id1 to node id2 and a list of the nodes ids that the path goes through using Dijkstra's Algorithm.<br>
 https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif.<br>
-#Dijkstra's Algorithm
+* Dijkstra's Algorithm:<br>
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 * save_to_json and load_from_json:<br>
 Saves the graph in JSON format to a file.<br>
