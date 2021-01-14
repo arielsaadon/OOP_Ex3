@@ -21,7 +21,7 @@ In each Node has the following:<br>
       <tr>
        <tbody>
           <tr>
-             <td rowspan=4><picture>
+             <td rowspan=4><tbody>
                <td>key</td>
       </tr> 
       <tr>
@@ -30,7 +30,7 @@ In each Node has the following:<br>
       <tr>
             <td>tag</td>
             <td>pos</td>
-      </picture></td>
+      </tbody></td>
              <td>int</td>
       </tr> 
       <tr>
