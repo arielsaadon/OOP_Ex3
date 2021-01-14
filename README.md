@@ -1,4 +1,4 @@
-# Directed weighted graph
+# Directed weighted graph OOP_EX3
 > - Authers [Yakov Elkobi](https://github.com/yakovElkobi) && [Ariel Saadon](https://github.com/arielsaadon)
 
 ![](https://hackernoon.com/hn-images/1*qq0sgd0Kny9QTaD-UT8LbQ.png)
@@ -9,7 +9,7 @@ The assignment is translate from java to python.<br>
 * [The assignment in java](https://github.com/yakovElkobi/OOP_ex2)<br>
 
 ## Simple example   
-Find the shortest path between two nodes in an undirected graph:
+Find the shortest path between two nodes in an directed weighted graph:
 
 ```python
 >>> from DiGraph import DiGraph
@@ -33,6 +33,8 @@ Find the shortest path between two nodes in an undirected graph:
 ```
 $ git clone https://github.com/arielsaadon/OOP_Ex3     
 ```
-Clone the repository to your project in Python.
+Clone the repository to your project in Python.  
 
-See our [Wiki](https://github.com/arielsaadon/OOP_Ex3/wiki) for full documentation, examples, operational details and other information.
+
+
+**See our [Wiki](https://github.com/arielsaadon/OOP_Ex3/wiki) for full documentation, examples, operational details and other information.**
