@@ -118,6 +118,3 @@ class DiGraphTest(unittest.TestCase):
         self.assertTrue(self.graph.remove_edge(0, 1))
         self.assertEqual(self.graph.e_size(), 0)
 
-
-if __name__ == '__main__':
-    unittest.main()
