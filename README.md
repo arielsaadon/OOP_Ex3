@@ -1,5 +1,11 @@
 # Directed weighted graph
+> - Authers [Yakov Elkobi](https://github.com/yakovElkobi) && [Ariel Saadon](https://github.com/arielsaadon)
+
 The project is about Directed weighted graph.<br>
+This project hes been done for assignment in course OOP in Ariel university.<br>
+The assignment is translate from java to python.<br>
+* The assignment in java.<br>
+https://github.com/yakovElkobi/OOP_ex2<br>
 It has the following class.<br>
 
 # Class NodeData:<br>
@@ -98,7 +104,7 @@ https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 * save_to_json and load_from_json:<br>
 Saves the graph in JSON format to a file.<br>
 Loads a graph from a json file.<br>
-True if the seve/loading was successful, False o.w.?<br>
+True if the seve/loading was successful, False o.w.<br>
 * plot_graph:<br>
 A show graph for example.<br>
 
