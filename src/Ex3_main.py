@@ -23,7 +23,6 @@ def check():
     check1()
     check2()
 
-
 def check0():
     """
     This function tests the naming (main methods of the DiGraph class, as defined in GraphInterface.
@@ -32,6 +31,7 @@ def check0():
     g = DiGraph()  # creates an empty directed graph
     for n in range(4):
         g.add_node(n)
+
     g.add_edge(0, 1, 1)
     g.add_edge(1, 0, 1.1)
     g.add_edge(1, 2, 1.3)
@@ -86,4 +86,4 @@ def check2():
 
 
 if __name__ == '__main__':
-    check()
+     check()
