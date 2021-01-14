@@ -3,7 +3,7 @@ import math
 
 class NodeData:
 
-    def __init__(self, key: int, tag: bool = False, pos: tuple = None):
+    def __init__(self, key: int, pos: tuple = None, tag: bool = False):
         self.key = key
         self.tag = tag
         self.weight = math.inf
