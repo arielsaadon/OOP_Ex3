@@ -1,8 +1,8 @@
 # Directed weighted graph
-# The project is about Directed weighted graph:
+The project is about Directed weighted graph.<br>
 It has the following class.<br>
 
-# Class NodeData:
+# Class NodeData:<br>
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
 
@@ -36,10 +36,10 @@ In each Node has the following:<br>
          
 # Class DiGraph:
 This class repesnt graph.<br>
-In this class you can do the following:
+In this class you can do the following:<br>
 add/remove Node in the graph.<br>
 add/remove edge in the graph.<br>
-Also you can get the following:
+Also you can get the following:<br>
 All Nodes, edges out/in, node size, edge size, mc.<br>
 The Node are stored in a Dict.<br>
 The edgs and weight are stored in a double Dict.<br>
@@ -80,30 +80,30 @@ mc counts actions in the graph.<br>
 
 # Class GraphAlgo:
 In this class you can get graph and do some algorithms.<br>
-The following methods:
-* connected_component:
+The following methods:<br>
+* connected_component:<br>
 Finds the Strongly Connected Component(SCC) that node id1 is a part of.<br>
 In this method we use BFS algorithm.<br>
 Return The list of nodes in the SCC.<br>
 
 ![](https://en.wikipedia.org/wiki/Breadth-first_search#/media/File:Animated_BFS.gif)
 
-#BFS algorithm:
+#BFS algorithm:<br>
 https://en.wikipedia.org/wiki/Breadth-first_search
-connected_component:
+* connected_components:<br>
 Finds all the Strongly Connected Component(SCC) in the graph.<br>
 In this method we use method connected_component.<br>
 The list all SCC.<br>
-* shortest_path:
+* shortest_path:<br>
 Returns the shortest path from node id1 to node id2 and a list of the nodes ids that the path goes through using Dijkstra's Algorithm.<br>
 https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif.<br>
 #Dijkstra's Algorithm
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-* save_to_json and load_from_json:
+* save_to_json and load_from_json:<br>
 Saves the graph in JSON format to a file.<br>
 Loads a graph from a json file.<br>
 True if the seve/loading was successful, False o.w.?<br>
-* plot_graph:
+* plot_graph:<br>
 A show graph for example.<br>
 
 
