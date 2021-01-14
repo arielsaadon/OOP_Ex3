@@ -13,6 +13,25 @@ In each Node has the following:<br>
   <thead>
     <tr>
               <th>Fields</th>
+       </tr>
+    <tbody>
+      <tr>
+               <td>key</td>
+      </tr> 
+      <tr>
+            <td>weight</td>
+      </tr> 
+      <tr>
+            <td>tag</td>
+      </tr> 
+      <tr>
+        <td>pos</td>
+      </tr> 
+      <tr>
+       </tr>
+       </tbody>
+              
+      
               <th>Type</th>
       </tr>
     <tbody>
