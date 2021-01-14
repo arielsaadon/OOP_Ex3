@@ -81,7 +81,7 @@ mc counts actions in the graph.<br>
 # Class GraphAlgo:
 In this class you can get graph and do some algorithms.<br>
 The following methods:
-*connected_component:
+* connected_component:
 Finds the Strongly Connected Component(SCC) that node id1 is a part of.<br>
 In this method we use BFS algorithm.<br>
 Return The list of nodes in the SCC.<br>
@@ -94,16 +94,16 @@ connected_component:
 Finds all the Strongly Connected Component(SCC) in the graph.<br>
 In this method we use method connected_component.<br>
 The list all SCC.<br>
-*shortest_path:
+* shortest_path:
 Returns the shortest path from node id1 to node id2 and a list of the nodes ids that the path goes through using Dijkstra's Algorithm.<br>
 https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif.<br>
 #Dijkstra's Algorithm
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-*save_to_json and load_from_json:
+* save_to_json and load_from_json:
 Saves the graph in JSON format to a file.<br>
 Loads a graph from a json file.<br>
 True if the seve/loading was successful, False o.w.?<br>
-*plot_graph:
+* plot_graph:
 A show graph for example.<br>
 
 
