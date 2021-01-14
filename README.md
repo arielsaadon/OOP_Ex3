@@ -89,8 +89,6 @@ Finds the Strongly Connected Component(SCC) that node id1 is a part of.<br>
 In this method we use BFS algorithm.<br>
 Return The list of nodes in the SCC.<br>
 
-![](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
-
 * BFS algorithm:<br>
 https://en.wikipedia.org/wiki/Breadth-first_search
 * connected_components:<br>
@@ -99,6 +97,9 @@ In this method we use method connected_component.<br>
 The list all SCC.<br>
 * shortest_path:<br>
 Returns the shortest path from node id1 to node id2 and a list of the nodes ids that the path goes through using Dijkstra's Algorithm.<br>
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
+
 https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif.<br>
 * Dijkstra's Algorithm:<br>
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
