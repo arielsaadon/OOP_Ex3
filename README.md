@@ -9,9 +9,6 @@ It has the following class.<br>
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
 
-<table>
-  <thead>
-    <tr>
               <th>Fields</th>
        </tr>
     <tbody>
