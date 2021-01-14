@@ -1,10 +1,10 @@
-import heapq
 import json
 import math
 import random
+from queue import PriorityQueue
 
 import matplotlib.pyplot as plt
-from queue import PriorityQueue
+
 from typing import List
 from DiGraph import DiGraph
 from GraphAlgoInterface import GraphAlgoInterface
@@ -12,7 +12,6 @@ from GraphInterface import GraphInterface
 
 
 class GraphAlgo(GraphAlgoInterface):
-    """This abstract class represents an implement of a graph."""
 
     def __init__(self, graph: DiGraph = None):
         if graph is None:
@@ -22,15 +21,15 @@ class GraphAlgo(GraphAlgoInterface):
 
     def get_graph(self) -> GraphInterface:
         """
-        :return: the directed graph on which the algorithm works on.
+        @return: the directed graph on which the algorithm works on.
         """
         return self.graph
 
     def load_from_json(self, file_name: str) -> bool:
         """
-         Loads a graph from a json file.
+        Loads a graph from a json file.
         @param file_name: The path to the json file
-         @returns True if the loading was successful, False o.w.
+        @returns True if the loading was successful, False o.w.
         """
         load_nodes = {}
         load_edges = {}
@@ -79,7 +78,6 @@ class GraphAlgo(GraphAlgoInterface):
         @param id1: The start node id
         @param id2: The end node id
         @return: The distance of the path, the path as a list
-
         Example:
         # >>> from GraphAlgo import GraphAlgo
         # >>> g_algo = GraphAlgo()
@@ -92,7 +90,6 @@ class GraphAlgo(GraphAlgoInterface):
         # (1, [0, 1])
         # >>> g_algo.shortestPath(0,2)
         # (5, [0, 1, 2])
-
         More info:
         https://en.wikipedia.org/wiki/Dijkstra's_algorithm
         """
@@ -167,8 +164,8 @@ class GraphAlgo(GraphAlgoInterface):
         """
         Plots the graph.
         If the nodes have a position, the nodes will be placed there.
-        Otherwise, they will be placed in a random but elegant manner.
-        @return: None
+        Otherwise, they will be placed in a random but elegant manner(with set_location() function).
+        @return: Graph Visualization
         """
         fig, ax = plt.subplots()
         self.set_location()
