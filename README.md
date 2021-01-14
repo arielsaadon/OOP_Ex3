@@ -58,17 +58,17 @@ In each Node has the following:<br>
             
 
 
-
+-----------------
 |Fields |  Type |
+|---------------|               
+|  key  |  int  |<raw=true">
 |               |
-|  key  |  int  |
+|weight | floot |<raw=true">
 |               |
-|weight | floot |
+|  tag  |boolean|<raw=true">
 |               |
-|  tag  |boolean|
-|               |
-|  pos  | tuple |
-|-------|-------|
+|  pos  | tuple |<raw=true">
+|-------|--------
 
 # Class DiGraph:
 This class repesnt graph.<br>
