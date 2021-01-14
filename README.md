@@ -62,16 +62,16 @@ edge_size counts edges in the graph, mc counts actions in the graph.<br>
       <tr>
        <tbody>
           <tr>
-               <td>nodes</td>
+               <td>vertices</td>
                <td>Dict</td>
       </tr> 
       <tr>
             <td>out_edge</td>
-            <td>double Dict</td>
+            <td>Dict</td>
       </tr> 
       <tr>
             <td>in_edges</td>
-            <td>double Dict</td>
+            <td>Dict</td>
       </tr> 
       <tr>  
             <td>edge_size</td>
