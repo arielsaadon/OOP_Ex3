@@ -30,19 +30,11 @@ In each Node has the following:<br>
       </tr> 
       <tr>
             <td>tag</td>
-            <td>pos</td>
-             <td>int</td>
-      </tr> 
-      <tr>   
-      </tr> 
-      <tr>
             <td>boolean</td>
       </tr> 
-      <tr>
-        <td>tuple</td>
-      </tr> 
-      <tr>
-       </tr>
+      <tr>  
+            <td>pos</td>
+            <td>tuple</td>
        </tbody> 
        </table>
             
