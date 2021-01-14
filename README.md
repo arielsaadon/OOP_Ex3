@@ -37,21 +37,7 @@ In each Node has the following:<br>
             <td>tuple</td>
        </tbody> 
        </table>
-            
-
-
-
-|Fields |  Type |
-|---------------|               
-|  key  |  int  |<raw=true">
-|               |
-|weight | floot |<raw=true">
-|               |
-|  tag  |boolean|<raw=true">
-|               |
-|  pos  | tuple |<raw=true">
-|-------|--------
-
+         
 # Class DiGraph:
 This class repesnt graph.<br>
 In this class you can do the following:
@@ -65,20 +51,36 @@ one for out edge and one for in edge.<br>
 edge_size counts edges in the graph.<br>
 mc counts actions in the graph.<br>
 
-
-|-----------|------------|
-|  Fields   |    Type    |
-|-----------|------------|
-|  nodes    |    Dict    |
-|-----------|------------|
-| out_edges | double Dict|
-|-----------|------------|
-| in_edges  | double Dict|
-|-----------|------------|
-| edge_size |     int    |
-|---------- |------------|
-|     mc    |     int    |
-|-----------|------------|
+<table>
+     <thead>
+       <tr>
+          <th>Fields</th>
+              <th>Type</th>
+     </tr>
+    <thead>
+      <tr>
+       <tbody>
+          <tr>
+               <td>nodes</td>
+               <td>Dict</td>
+      </tr> 
+      <tr>
+            <td>out_edge</td>
+            <td>double Dict</td>
+      </tr> 
+      <tr>
+            <td>in_edges</td>
+            <td>double Dict</td>
+      </tr> 
+      <tr>  
+            <td>edge_size</td>
+            <td>int</td>
+      </tr> 
+      <tr> 
+            <td>mc</td>
+            <td>int</td>
+       </tbody> 
+       </table>
 
 # Class GraphAlgo:
 In this class you can get graph and do some algorithms.<br>
