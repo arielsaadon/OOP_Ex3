@@ -1,7 +1,7 @@
 # Directed weighted graph OOP_EX3
 > - Authers [Yakov Elkobi](https://github.com/yakovElkobi) && [Ariel Saadon](https://github.com/arielsaadon)
 
-![](https://hackernoon.com/hn-images/1*qq0sgd0Kny9QTaD-UT8LbQ.png)
+<img src="https://hackernoon.com/hn-images/1*qq0sgd0Kny9QTaD-UT8LbQ.png" width="450" height="300">  
 
 The project is about Directed weighted graph.<br>
 This project hes been done for assignment in course OOP in Ariel university.<br>
@@ -33,8 +33,12 @@ Find the shortest path between two nodes in an directed weighted graph:
 ```
 $ git clone https://github.com/arielsaadon/OOP_Ex3     
 ```
-Clone the repository to your project in Python.  
+Clone the repository to your project in Python.   
 
+
+## Graph drawing
+|  ![](https://github.com/arielsaadon/OOP_Ex3/blob/main/resources/Graph.jpeg) | ![](https://github.com/arielsaadon/OOP_Ex3/blob/main/resources/Graph2.jpeg)| 
+| ------------- | ------------- |
 
 
 **See our [Wiki](https://github.com/arielsaadon/OOP_Ex3/wiki) for full documentation, examples, operational details and other information.**
