@@ -9,6 +9,33 @@ It has the following class.<br>
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
 
+<table>
+  <thead>
+    <tr>
+              <th>Fields</th>
+              <th>Type</th>
+      </tr>
+    <tbody>
+      <tr>
+             <td>int</td>
+      </tr> 
+      <tr>
+            <td>floot</td>
+      </tr> 
+      <tr>
+            <td>boolean</td>
+      </tr> 
+      <tr>
+        <td>tuple</td>
+      </tr> 
+      <tr>
+       </tr>
+       </tbody> 
+  </table>
+            
+
+
+
 |Fields |  Type |
 |               |
 |  key  |  int  |
