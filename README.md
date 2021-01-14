@@ -9,9 +9,16 @@ It has the following class.<br>
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
 
+
+
+    <table>
+     <thead>
+       <tr>
+      
               <th>Fields</th>
-       </tr>
-    <tbody>
+              <th>Type</th>
+     </tr>
+    <thead>
       <tr>
                <td>key</td>
       </tr> 
@@ -29,7 +36,7 @@ In each Node has the following:<br>
        </tbody>
               
       
-              <th>Type</th>
+              
       </tr>
     <tbody>
       <tr>
@@ -47,7 +54,7 @@ In each Node has the following:<br>
       <tr>
        </tr>
        </tbody> 
-  </table>
+       </table>
             
 
 
