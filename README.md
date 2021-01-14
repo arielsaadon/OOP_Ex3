@@ -21,7 +21,6 @@ In each Node has the following:<br>
       <tr>
        <tbody>
           <tr>
-             <td rowspan=4><fill>
                <td>key</td>
       </tr> 
       <tr>
@@ -29,15 +28,7 @@ In each Node has the following:<br>
       </tr> 
       <tr>
             <td>tag</td>
-      </tr> 
-      <tr>
         </td>pos</td>
-        </fill></td>
-      </tr> 
-      <tr>
-       </tr>
-       </tbody>
-        </tr>
     <tbody>
       <tr>
              <td>int</td>
