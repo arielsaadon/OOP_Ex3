@@ -21,7 +21,7 @@ In each Node has the following:<br>
       <tr>
        <tbody>
           <tr>
-             td rowspan=4><picture>
+             <td rowspan=4><picture>
                <td>key</td>
       </tr> 
       <tr>
