@@ -98,11 +98,8 @@ The list all SCC.<br>
 * shortest_path:<br>
 Returns the shortest path from node id1 to node id2 and a list of the nodes ids that the path goes through using Dijkstra's Algorithm.<br>
 
-#
-
 ![](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 
-https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif.<br>
 * Dijkstra's Algorithm:<br>
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 * save_to_json and load_from_json:<br>
