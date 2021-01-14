@@ -1,14 +1,10 @@
 # Directed weighted graph
-The project is about Directed weighted graph.<br>
-
-
-
-
+# The project is about Directed weighted graph:
 It has the following class.<br>
+
 # Class NodeData:
 This class repesnt Node in graph.<br>
 In each Node has the following:<br>
-
 
 
    <table>
@@ -89,7 +85,9 @@ The following methods:
 Finds the Strongly Connected Component(SCC) that node id1 is a part of.<br>
 In this method we use BFS algorithm.<br>
 Return The list of nodes in the SCC.<br>
-https://en.wikipedia.org/wiki/Breadth-first_search#/media/File:Animated_BFS.gif.<br>
+
+![](https://en.wikipedia.org/wiki/Breadth-first_search#/media/File:Animated_BFS.gif)
+
 #BFS algorithm:
 https://en.wikipedia.org/wiki/Breadth-first_search
 connected_component:
